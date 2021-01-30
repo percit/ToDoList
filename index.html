@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!--to jest z font awesome i to sa darmowe ikonki, takie dosyc estetyczna -->
+    <link rel= "stylesheet" href = "./styles.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <header>
+        <h1>Marcin's to do list</h1>
+    </header>
+    <form> <!--form to takie jakby polaczenie kilku elementow w jeden, najczesciej to jest jakis input i przycisk-->
+        <input type="text" class = "todo-input"><!--we can add the text-->
+        <button class = "todo-button" type = "submit"><!--we can submit the text-->
+            <i class="fas fa-plus-square"></i><!--this is our icon from awesome fonts, this is a cross-->
+        </button>
+        <div class = "select"> <!--to select to jest taka lista rzeczy, ze mozemy wybrac z all, completed, uncompleted-->
+            <select name = "todos" class = "filter-todo">
+                <option value = "all">All</option>
+                <option value = "completed">Completed</option>
+                <option value = "uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class ="todo-container">
+        <ul class = "todo-list"></ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
